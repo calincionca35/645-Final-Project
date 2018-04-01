@@ -1,0 +1,22 @@
+footer 
+    @include footer(120px, 50px, #30353D)
+    text-align: center
+    color: $white
+
+.social-media 
+    @include widthMargin(165px)
+    & a
+        @include widthHeight(36px, 36px)
+        display: block
+        text-indent: -9999px
+    div
+        float: left
+        #{$mrg}-right: $smallSpace
+        &.one
+            #{$bg}: $socialMedia 0 0
+        &.two
+            #{$bg}: $socialMedia -38px 0
+        &.three
+            #{$bg}: $socialMedia -76px 0
+        &.four
+            #{$bg}: $socialMedia -114px 0

@@ -1,0 +1,36 @@
+@mixin hderLnHt($color, $wghtMult, $fntSzMult)
+    line-height: 0
+    color: $color
+    font-weight: $baseFontWgt * $wghtMult
+    font-size: $baseFontSize * $fntSzMult
+
+@mixin graybar($hgt, $pdTp, $bgCol)
+    width: percentage(1)
+    height: $hgt
+    padding-top: $pdTp
+    #{$bg}: $bgCol
+    clear: both
+
+@mixin footer($hgt, $pdTp, $bgCol)
+    width: percentage(1)
+    height: $hgt
+    padding-top: $pdTp
+    #{$bg}: $bgCol
+
+@mixin contProdTest($wid, $floDir)
+    width: $wid
+    float: $floDir
+
+@mixin widthHeight($wid, $hght)
+    width: $wid
+    height: $hght
+
+@mixin widthMargin($wid)
+    width: $wid
+    #{$mrg}: 0 auto
+
+@mixin fontColSzWgt($fontColor, $fontSize, $fontWght)
+    color: $fontColor
+    font-size: $fontSize
+    font-weight: $fontWght
+    

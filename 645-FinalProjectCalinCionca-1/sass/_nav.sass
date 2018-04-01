@@ -1,0 +1,17 @@
+nav
+    @include widthHeight(540px, 190px)
+    float: left
+    text-align: right
+    ul
+    list-style-type: none
+    #{$mrg}-top: 78px
+    li
+        display: inline
+        font-size: $baseFontSize * 0.8
+        #{$mrg}-right: $medSpace
+        a
+            color: $salmon
+            text-decoration: none
+            letter-spacing: -0.01em
+            &:hover
+                color: $white

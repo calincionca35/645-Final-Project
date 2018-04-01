@@ -1,0 +1,49 @@
+@import _variables.sass
+@import _mixin.sass
+@import _nav    
+@import _header.sass
+@import _footer.sass
+
+body
+    font-family: $bodyFont
+    font-size: $baseFontSize
+    line-height: $baseLineHeight
+    #{$bg}: url('../images/bg.gif') $white repeat-x
+
+main
+    @include widthMargin(940px)
+    padding: 0 $medSpace
+
+figure
+    @include widthHeight(400px, 190px)
+    #{$bg}: url('../images/logo.png') no-repeat 0 $boxSpace
+    float: left
+
+#headline
+    @include widthHeight(percentage(1), 130px)
+    #{$bg}: #F25C43
+    text-align: center
+    #{$mrg}: 0 auto
+    h1
+        @include fontColSzWgt($white, 2.5em, 100)
+        padding-top: $boxSpace
+
+#content
+    width: 940px
+    #{$mrg}: $largeSpace auto
+    h3
+        @include fontColSzWgt($gray, 2em, 400)
+    #products
+        @include contProdTest(460px, left)
+        img
+            float: left
+            #{$mrg}-right: $largeSpace
+        article 
+            #{$mrg}-bottom: $largeSpace * 2
+        h4
+            line-height: $baseLineHeight / 2
+    #testimonials
+        @include contProdTest(460px, right)
+
+.greybar
+    @include graybar(90px, 30px, #F5F6F6)
